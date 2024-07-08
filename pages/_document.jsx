@@ -17,7 +17,7 @@ class MyDocument extends Document {
                         content="https://dis-bot.xyz"
                     />
                     <meta property="og:type" content="website" />
-                    <meta property="og:title" content="MusicMaker" />
+                    <meta property="og:title" content="Disbot" />
                     <link
                         rel="icon"
                         href="/img/logo2.png"
