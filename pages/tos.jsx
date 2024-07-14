@@ -9,7 +9,7 @@ export default function Tos() {
             </p>
             <div className="animateHeader text-white text-opacity-40 mt-5">
                 <p>
-                    Bienvenue sur les conditions d'utilisation de Disbot. En utilisant Disbot, vous acceptez de vous conformer aux conditions décrites ci-dessous. Si vous avez des questions ou des préoccupations, veuillez nous contacter à l'adresse e-mail indiquée à la fin de ce document.
+                    Bienvenue sur les conditions d'utilisation de Disbot. En utilisant Disbot, vous acceptez de vous conformer aux conditions décrites ci-dessous.
                 </p>
                 <div className="py-3"></div>
                 <a className="text-white">
@@ -51,7 +51,7 @@ export default function Tos() {
                     6. Modifications des Conditions d'Utilisation
                 </a>
                 <p>
-                    Toute modification des présentes conditions d'utilisation sera communiquée aux utilisateurs via le serveur de support de Disbot. Il est recommandé aux utilisateurs de consulter régulièrement les conditions pour se tenir informés des mises à jour.
+                    Toute modification des présentes conditions d'utilisation sera communiquée aux utilisateurs via le serveur Discord support de Disbot. Il est recommandé aux utilisateurs de consulter régulièrement les conditions pour se tenir informés des mises à jour.
                 </p>
                 <div className="py-3"></div>
                 <a className="text-white">
@@ -72,10 +72,7 @@ export default function Tos() {
                     9. Contact
                 </a>
                 <p>
-                    Pour toute question ou préoccupation concernant ces conditions d'utilisation, veuillez nous contacter à l'adresse e-mail suivante:
-                    <br></br>
-                    <br></br>
-                    ・ Email: contact@dis-bot.xyz
+                    Pour toute question ou préoccupation concernant ces conditions d'utilisation, veuillez nous contacter via le serveur Discord support de Disbot.
                     <br></br>
                     <br></br>
                     Merci d'utiliser Disbot. Votre confiance et votre satisfaction sont importantes pour nous.

@@ -23,7 +23,7 @@ export default function Privacy() {
                     2. Hébergement
                 </a>
                 <p>
-                    Le service présenté dans cette section à savoir OVH (OVH SAS 2 rue Kellermann - 59100 Roubaix - France) est un service d'hébergement d'infrastructures informatiques. Il permet à ce site web de fonctionner et d'être distribué ainsi que de fournir l'infrastructure pour exécuter des fonctionnalités ou des parties spécifiques de ce site web.
+                Le service présenté dans cette section, à savoir OVH (OVH SAS 2 rue Kellermann - 59100 Roubaix - France), est un service d'hébergement d'infrastructures informatiques. Il permet à ce site web de fonctionner et d'être distribué ainsi que de fournir l'infrastructure pour exécuter des fonctionnalités ou des parties spécifiques de ce site web. OVH collecte des données conformément à leur politique de confidentialité.
                 </p>
                 <div className="py-3"></div>
                 <a className="text-white">
@@ -90,14 +90,7 @@ export default function Privacy() {
                     ・ Demander la rectification ou la suppression de vos données personnelles
                     <br></br>
                     <br></br>
-                    Pour exercer ces droits, veuillez nous contacter à l'adresse indiquée à la fin de cette politique.
-                </p>
-                <div className="py-3"></div>
-                <a className="text-white">
-                    9. Cookies et Technologies Similaires
-                </a>
-                <p>
-                    Disbot n'utilise aucun cookie ni aucune technologie similaire pour collecter des données.
+                    Pour exercer ces droits, veuillez nous contacter via le serveur Discord support de Disbot.
                 </p>
                 <div className="py-3"></div>
                 <a className="text-white">
@@ -118,10 +111,7 @@ export default function Privacy() {
                     11. Contact
                 </a>
                 <p>
-                    Pour toute question ou préoccupation concernant cette politique de confidentialité ou pour exercer vos droits en matière de données personnelles, veuillez nous contacter à l'adresse suivante:
-                    <br></br>
-                    <br></br>
-                    ・ Email: contact@dis-bot.xyz
+                    Pour toute question ou préoccupation concernant cette politique de confidentialité ou pour exercer vos droits en matière de données personnelles, veuillez nous contacter via le serveur Discord support de Disbot.
                     <br></br>
                     <br></br>
                     Merci d'utiliser Disbot. Votre confiance est importante pour nous et nous nous engageons à protéger votre vie privée.
