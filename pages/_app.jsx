@@ -8,7 +8,7 @@ import Head from "next/head";
 
 import Header from "../components/static/Header.jsx";
 import Footer from "../components/static/Footer.jsx";
-import CursorFollower from '../components/CursorFollower.jsx';
+import CursorEffects from '../components/CursorEffects.jsx';
 
 Router.onRouteChangeStart = () => NProgress.start();
 Router.onRouteChangeComplete = () => NProgress.done();
@@ -43,7 +43,7 @@ export default function AwardApp({ Component, pageProps }) {
 
     return (
         <ThemeProvider defaultTheme="violet">
-            <CursorFollower />
+            <CursorEffects />
 
             <div className="h-screen relative border-t-4 border-amber-600">
                 <div
