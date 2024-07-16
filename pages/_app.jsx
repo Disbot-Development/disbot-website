@@ -16,7 +16,7 @@ Router.onRouteChangeError = () => NProgress.done();
 
 import { ThemeProvider } from "next-themes";
 
-export default function AwardApp({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
     const NavItems = [
         {
             link: true,
@@ -42,7 +42,7 @@ export default function AwardApp({ Component, pageProps }) {
     ];
 
     return (
-        <ThemeProvider defaultTheme="violet">
+        <ThemeProvider defaultTheme="blurple">
             <CursorEffects />
 
             <div className="h-screen relative border-t-4 border-amber-600">
@@ -60,10 +60,6 @@ export default function AwardApp({ Component, pageProps }) {
                     </div>
                     <Footer />
                 </main>
-                <div>
-                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" />
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" />
-                </div>
             </div>
         </ThemeProvider>
     );
