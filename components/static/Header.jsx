@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-const MobileNavbar = ({ open, setOpen, NavItems }) => {
+function MobileNavbar({ open, setOpen, NavItems }) {
     const router = useRouter();
     return (
         <>
@@ -60,7 +60,8 @@ const MobileNavbar = ({ open, setOpen, NavItems }) => {
         </>
     );
 };
-const Header = ({ $, NavItems }) => {
+
+export default function Header({ $, NavItems }) {
     const [open, setOpen] = useState(false);
     const router = useRouter();
 
@@ -152,5 +153,3 @@ const Header = ({ $, NavItems }) => {
         </>
     );
 };
-
-export default Header;

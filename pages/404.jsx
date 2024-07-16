@@ -1,6 +1,6 @@
 import ErrorPage from "../components/ErrorPage";
 
-const UnkownPage = () => {
+export default function UnkownPage() {
     let messages = [
         "Avez-vous perdu votre chemin ?",
         "Oh ! La route est bloquée.",
@@ -9,13 +9,8 @@ const UnkownPage = () => {
 
     return (
         <ErrorPage
-            code={404}
-            message={
-                messages[Math.floor(Math.random() * messages.length)] ||
-                "Page introuvable."
-            }
+            code = { 404 }
+            message = { messages[Math.floor(Math.random() * messages.length)] || "Page introuvable." }
         />
     );
 };
-
-export default UnkownPage;

@@ -8,7 +8,7 @@ import Head from "next/head";
 
 import Header from "../components/static/Header.jsx";
 import Footer from "../components/static/Footer.jsx";
-import CursorEffects from '../components/CursorEffects.jsx';
+import CursorEffects from '../components/static/CursorEffects.jsx';
 
 Router.onRouteChangeStart = () => NProgress.start();
 Router.onRouteChangeComplete = () => NProgress.done();

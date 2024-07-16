@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
-const ErrorPage = ({ code, message }) => {
+export default function ErrorPage({ code, message }) {
     const [clicked, setClicked] = useState(false);
     const router = useRouter();
     
@@ -13,8 +13,8 @@ const ErrorPage = ({ code, message }) => {
 
         <div className="max-w-7xl text-center py-20 mx-auto">
         <div className="flex w-full justify-center">
-      <img className="mb-12" width="200" src="/img/bck2.png" />
-      </div>
+        <img className="mb-12" width="200" src="/img/bck2.png" />
+        </div>
             <h1 className="text-4xl font-extrabold text-white">{code}</h1>
             <p className="text-xl font-thin text-white text-opacity-75">{message}</p>
             <button
@@ -28,6 +28,4 @@ const ErrorPage = ({ code, message }) => {
             </button>
         </div>
     </>
-}
-
-export default ErrorPage;
+};
