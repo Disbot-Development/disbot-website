@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Karla:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic");
+@import url('https://fonts.googleapis.com/css?family=Karla:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic');
 
 .tippy-box {
     position: relative;
@@ -69,7 +69,7 @@
 }
 
 .tippy-arrow:before {
-    content: "";
+    content: '';
     position: absolute;
     border-color: transparent;
     border-style: solid

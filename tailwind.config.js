@@ -1,8 +1,8 @@
 const tones = Array.from({ length: 10 }).reduce((obj, val, index) => {
-    const tone = index == 0 ? "50" : String(index * 100);
+    const tone = index == 0 ? '50' : String(index * 100);
     const tones = Array.from({ length: 10 }).reduce((_obj, _val, _index) => {
-      const _tone = String(_index) + (_index != 0 ? "0" : "");
-      _obj[tone + "/" + _tone] = `var(--${tone}-${_tone})`;
+      const _tone = String(_index) + (_index != 0 ? '0' : '');
+      _obj[tone + '/' + _tone] = `var(--${tone}-${_tone})`;
       return _obj;
     }, {});
     obj = {
@@ -23,7 +23,7 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                amber: {
+                blurple: {
                     ...tones,
                     900: 'var(--900)',
                     800: 'var(--800)',
