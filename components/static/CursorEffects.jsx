@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function CursorEffects() {
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const [hoveringLink, setHoveringLink] = useState(false);
 
     const circleDiameter = 25;
-    const bubbleWidth = 60;
-    const bubbleHeight = 30;
+    const hoveringCircleDiameter = 50;
+
+    const littleCircleDiameter = 7;
+    const hoveringLittleCircleDiameter = 4;
 
     const handleMouseMove = (e) => {
         setPosition({ x: e.clientX, y: e.clientY });
@@ -40,14 +42,14 @@ export default function CursorEffects() {
 
     const circleStyle = {
         position: 'fixed',
-        width: hoveringLink ? `${bubbleWidth}px` : `${circleDiameter}px`,
-        height: hoveringLink ? `${bubbleHeight}px` : `${circleDiameter}px`,
-        backgroundColor: 'var(--600-50)',
-        transition: 'transform 0.06s ease-out, width 0.3s ease-out, height 0.3s ease-out',
-        transform: `translate(${position.x - (hoveringLink ? bubbleWidth / 2 : circleDiameter / 2)}px, ${
-            position.y - (hoveringLink ? bubbleHeight + 10 : circleDiameter / 2)}px)`,
-        backdropFilter: 'blur(2px)',
-        borderRadius: hoveringLink ? '10px' : '50%',
+        width: hoveringLink ? `${hoveringCircleDiameter}px` : `${circleDiameter}px`,
+        height: hoveringLink ? `${hoveringCircleDiameter}px` : `${circleDiameter}px`,
+        backgroundColor: 'rgba(255, 255, 255, 0.3)',
+        boxShadow: '0 0 10px rgba(0, 0, 0, 0.25)',
+        transition: 'transform 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out',
+        transform: `translate(${position.x - (hoveringLink ? hoveringCircleDiameter / 2 : circleDiameter / 2)}px, ${position.y - (hoveringLink ? hoveringCircleDiameter / 2 : circleDiameter / 2)}px)`,
+        backdropFilter: 'blur(3px)',
+        borderRadius: '50%',
         pointerEvents: 'none',
         zIndex: 9999,
         display: 'flex',
@@ -55,23 +57,27 @@ export default function CursorEffects() {
         justifyContent: 'center'
     };
 
-    const textStyle = {
-        whiteSpace: 'nowrap',
-        opacity: hoveringLink ? 1 : 0,
-        transition: 'opacity 0.4s ease-out',
-        visibility: hoveringLink ? 'visible' : 'hidden',
-        fontSize: '14px',
-        fontWeight: 'bold',
-        color: '#FFFFFF'
+    const littleCircle = {
+        position: 'fixed',
+        width: hoveringLink ? `${hoveringLittleCircleDiameter}px` : `${littleCircleDiameter}px`,
+        height: hoveringLink ? `${hoveringLittleCircleDiameter}px` : `${littleCircleDiameter}px`,
+        backgroundColor: 'rgba(255, 255, 255, 0.8)',
+        boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
+        transition: 'width 0.3s ease-out, height 0.3s ease-out',
+        transform: `translate(${position.x - (hoveringLink ? hoveringLittleCircleDiameter / 2 : littleCircleDiameter / 2)}px, ${position.y - (hoveringLink ? hoveringLittleCircleDiameter / 2 : littleCircleDiameter / 2)}px)`,
+        backdropFilter: 'blur(3px)',
+        borderRadius: '50%',
+        pointerEvents: 'none',
+        zIndex: 10000,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
     };
 
     return (
         <>
-            <div style={circleStyle}>
-                <span style={textStyle}>
-                    Clique
-                </span>
-            </div>
+            <div style={circleStyle}></div>
+            <div style={littleCircle}></div>
             <style jsx global>{`
                 * {
                     cursor: none !important;

@@ -9,8 +9,9 @@ export default function Footer() {
             try {
                 const response = await fetch('/api/users');
                 if (!response.ok) throw new Error('Network response was not ok');
+                
                 const data = await response.json();
-                setUserCount(data.users);
+                setUserCount(data);
             } catch (error) {
                 console.error('Failed to fetch user count:', error);
             };
@@ -33,17 +34,17 @@ export default function Footer() {
                         <div className='col-span-1'>
                             <p className='text-white font-medium mt-3 sm:mt-0 sm:mb-3'>Liens</p>
                             <div>
-                                <a href='https://discord.gg/YPW3ZNuKW5' target='_blank' className='text-white/50 hover:text-white hover:underline transform duration-200'>
+                                <a href='https://discord.gg/YPW3ZNuKW5' className='text-white/50 hover:text-white hover:underline transform duration-200'>
                                     Support
                                 </a>
                             </div>
                             <div>
-                                <a href='https://discord.com/oauth2/authorize?client_id=1233606057507422268' target='_blank' className='text-white/50 hover:text-white hover:underline transform duration-200'>
+                                <a href='https://discord.com/oauth2/authorize?client_id=1233606057507422268' className='text-white/50 hover:text-white hover:underline transform duration-200'>
                                     Inviter
                                 </a>
                             </div>
                             <div>
-                                <a href='https://api.dis-bot.xyz/routes' target='_blank' className='text-white/50 hover:text-white hover:underline transform duration-200'>
+                                <a href='https://api.dis-bot.xyz/routes' className='text-white/50 hover:text-white hover:underline transform duration-200'>
                                     API
                                 </a>
                             </div>

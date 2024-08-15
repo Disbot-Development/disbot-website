@@ -5,7 +5,7 @@ export default class MyDocument extends Document {
         return (
             <Html className='scroll-smooth' lang='en'>
                 <Head>
-                    <link rel='apple-touch-icon' href='/logo.jpg' />
+                    <link rel='apple-touch-icon' href='/img/logo.jpg' />
                     <meta name='robots' content='index,follow' />
                     <meta name='googlebot' content='index,follow' />
                     <meta
@@ -20,7 +20,7 @@ export default class MyDocument extends Document {
                     <meta property='og:title' content='Disbot' />
                     <link
                         rel='icon'
-                        href='/img/logo2.png'
+                        href='/img/logo.jpg'
                         type='image/x-icon'
                     />
                     <meta

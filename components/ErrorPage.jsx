@@ -20,7 +20,7 @@ export default function ErrorPage({ code, message }) {
                 <p className='text-xl font-thin text-white text-opacity-75'>{message}</p>
                 <button
                     type='button'
-                    className='bg-blurple-400 text-center w-72 rounded-2xl h-14 relative font-medium text-zinc-900 group mt-2 shadow-lg shadow-blurple-600/20'
+                    className='bg-blurple-400 text-center w-72 rounded-2xl h-14 relative font-medium text-white group mt-2 shadow-lg shadow-blurple-600/20'
                     onClick={() => {
                         setClicked(true);
                         router.back();
@@ -39,17 +39,17 @@ export default function ErrorPage({ code, message }) {
                                 xmlns='http://www.w3.org/2000/svg'
                             >
                                 <path
-                                    fill='#000000'
+                                    fill='#FFFFFF'
                                     d='M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z'
                                 ></path>
                                 <path
-                                    fill='#000000'
+                                    fill='#FFFFFF'
                                     d='m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z'
                                 ></path>
                             </svg>
                         )}
                     </div>
-                    <p className='translate-x-8 text-zinc-900'>
+                    <p className='translate-x-8 text-white'>
                         {clicked ? '' : 'Retourner en arrière'}
                     </p>
                 </button>
