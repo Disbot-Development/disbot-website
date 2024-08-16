@@ -27,40 +27,39 @@ export default function Footer() {
                     <div className='lg:grid lg:grid-cols-6 gap-20'>
                         <div className='col-span-3'>
                             <div className='flex items-center space-x-5'>
-                                <img src='/img/logo2.png' className='rounded-full w-12' />
-                                <p className='font-semibold text-xl text-white'>Disbot</p>
+                                <img src='/img/bck.png' className='rounded-full w-[170px]' />
                             </div>
                         </div>
                         <div className='col-span-1'>
                             <p className='text-white font-medium mt-3 sm:mt-0 sm:mb-3'>Liens</p>
-                            <div>
-                                <a href='https://discord.gg/YPW3ZNuKW5' className='text-white/50 hover:text-white hover:underline transform duration-200'>
+                            <div className='mb-1'>
+                                <a href='https://discord.gg/YPW3ZNuKW5' className='text-white/50 hover:text-white transform duration-200'>
                                     Support
                                 </a>
                             </div>
-                            <div>
-                                <a href='https://discord.com/oauth2/authorize?client_id=1233606057507422268' className='text-white/50 hover:text-white hover:underline transform duration-200'>
+                            <div className='mb-1'>
+                                <a href='https://discord.com/oauth2/authorize?client_id=1233606057507422268' className='text-white/50 hover:text-white transform duration-200'>
                                     Inviter
                                 </a>
                             </div>
-                            <div>
-                                <a href='https://api.dis-bot.xyz/routes' className='text-white/50 hover:text-white hover:underline transform duration-200'>
+                            <div className='mb-1'>
+                                <a href='https://api.dis-bot.xyz/routes' className='text-white/50 hover:text-white transform duration-200'>
                                     API
                                 </a>
                             </div>
                         </div>
                         <div className='col-span-1'>
                             <p className='text-white font-medium mt-3 sm:mt-0 sm:mb-3'>Réseaux</p>
-                            <div>
+                            <div className='mb-1'>
                                 <Link href='https://discord.gg/YPW3ZNuKW5' rel='noopener noreferrer'>
-                                    <a className='text-white/50 hover:text-white hover:underline transform duration-200'>
+                                    <a className='text-white/50 hover:text-white transform duration-200'>
                                     <i className={`fa-brands fa-discord`} /> Discord 
                                     </a>
                                 </Link>
                             </div>
-                            <div>
+                            <div className='mb-1'>
                                 <Link href='https://github.com/disbot-development' rel='noopener noreferrer'>
-                                    <a className='text-white/50 hover:text-white hover:underline transform duration-200'>
+                                    <a className='text-white/50 hover:text-white transform duration-200'>
                                     <i className={`fa-brands fa-github`} /> GitHub 
                                     </a>
                                 </Link>
@@ -68,16 +67,16 @@ export default function Footer() {
                         </div>
                         <div className='col-span-1'>
                             <p className='text-white font-medium mt-3 sm:mt-0 sm:mb-3'>Important</p>
-                            <div>
+                            <div className='mb-1'>
                                 <Link href='/tos'>
-                                    <a className='text-white/50 hover:text-white hover:underline transform duration-200'>
+                                    <a className='text-white/50 hover:text-white transform duration-200'>
                                         Conditions d'utilisation
                                     </a>
                                 </Link>
                             </div>
-                            <div>
+                            <div className='mb-1'>
                                 <Link href='/privacy'>
-                                    <a className='text-white/50 hover:text-white hover:underline transform duration-200'>
+                                    <a className='text-white/50 hover:text-white transform duration-200'>
                                         Politique de confidentialité
                                     </a>
                                 </Link>

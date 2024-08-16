@@ -34,7 +34,7 @@ export default function Header({ $, NavItems }) {
     return (
         <>
             <header>
-                <div className='max-w-7xl px-5 mx-auto py-5 flex items-center justify-between'>
+                <div className='max-w-7xl mx-auto py-5 flex items-center justify-between'>
                     <div className='flex items-center space-x-6'>
                         <div className='flex items-center space-x-3'>
                             <a href='/'>

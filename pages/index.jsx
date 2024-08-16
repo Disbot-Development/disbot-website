@@ -45,7 +45,7 @@ export default function Landing() {
                 />
             )}
 
-            <div className='py-20 mt-20 mb-30 mx-auto'>
+            <div className='mt-40 mx-auto'>
                 <div className='flex justify-center items-center w-full lg:justify-between'>
                     <div>
                         <p className='text-6xl font-extrabold text-white text-center lg:text-left'>
@@ -84,7 +84,15 @@ export default function Landing() {
                 </div>
             </div>
 
-            <div className='h-60 w-full mt-20 rounded-3xl bg-[#212121] flex items-center justify-center'>
+            <div className='flex items-center justify-center'>
+                <a href='#features' className='animate-bounce'>
+                    <svg xmlns='http://www.w3.org/2000/svg' className='w-8 h-8 text-white' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+                        <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M19 9l-7 7-7-7'/>
+                    </svg>
+                </a>
+            </div>
+
+            <div className='h-60 w-full mt-24 rounded-3xl bg-[#212121] flex items-center justify-center'>
                 {guilds ? (
                     <p className='mx-20 text-2xl font-semibold text-white'>
                         Disbot est fiable et est sur {new Intl.NumberFormat('en-US', { maximumFractionDigits: 1, notation: 'compact', compactDisplay: 'short' }).format(guilds.length)}+ serveurs
@@ -165,7 +173,7 @@ export default function Landing() {
             <div className='flex items-center justify-center'>
                 <div className='h-60 w-[800px] mt-20 rounded-3xl border-2 border-blurple-600 bg-blurple-600/10 flex flex-col items-center justify-center'>
                     {guilds ? (
-                        <p className='mx-20 text-2xl text-white text-center'>
+                        <p className='mx-20 sm:text-2xl text-white text-center text-base'>
                             Protégez votre serveur tout en gardant les yeux fermés
                         </p>
                     ) : (
@@ -174,7 +182,7 @@ export default function Landing() {
                         </p>
                     )}
                     <Link href={'https://discord.com/oauth2/authorize?client_id=1233606057507422268'}>
-                        <a className='mt-5 group overflow-hidden relative w-32 h-12 bg-blurple-600/50 text-white rounded-xl font-medium cursor-pointer z-10 flex items-center justify-center'>
+                        <a className='mt-5 group overflow-hidden relative bg-blurple-600/50 text-white rounded-xl font-medium cursor-pointer z-10 flex items-center justify-center w-28 h-8 sm:w-32 sm:h-12'>
                             Inviter
                                 <span className='absolute w-36 h-32 -top-8 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left'></span>
                                 <span className='absolute w-36 h-32 -top-8 -left-2 bg-blurple-600/70 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-left'></span>
