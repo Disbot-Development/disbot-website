@@ -41,43 +41,21 @@ export default function CursorEffects() {
     }, []);
 
     const circleStyle = {
-        position: 'fixed',
         width: hoveringLink ? `${hoveringCircleDiameter}px` : `${circleDiameter}px`,
         height: hoveringLink ? `${hoveringCircleDiameter}px` : `${circleDiameter}px`,
-        backgroundColor: 'rgba(255, 255, 255, 0.3)',
-        boxShadow: '0 0 10px rgba(0, 0, 0, 0.25)',
-        transition: 'transform 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out',
         transform: `translate(${position.x - (hoveringLink ? hoveringCircleDiameter / 2 : circleDiameter / 2)}px, ${position.y - (hoveringLink ? hoveringCircleDiameter / 2 : circleDiameter / 2)}px)`,
-        backdropFilter: 'blur(3px)',
-        borderRadius: '50%',
-        pointerEvents: 'none',
-        zIndex: 9999,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
     };
 
-    const littleCircle = {
-        position: 'fixed',
+    const littleCircleStyle = {
         width: hoveringLink ? `${hoveringLittleCircleDiameter}px` : `${littleCircleDiameter}px`,
         height: hoveringLink ? `${hoveringLittleCircleDiameter}px` : `${littleCircleDiameter}px`,
-        backgroundColor: 'rgba(255, 255, 255, 0.8)',
-        boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
-        transition: 'width 0.3s ease-out, height 0.3s ease-out',
         transform: `translate(${position.x - (hoveringLink ? hoveringLittleCircleDiameter / 2 : littleCircleDiameter / 2)}px, ${position.y - (hoveringLink ? hoveringLittleCircleDiameter / 2 : littleCircleDiameter / 2)}px)`,
-        backdropFilter: 'blur(3px)',
-        borderRadius: '50%',
-        pointerEvents: 'none',
-        zIndex: 10000,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
     };
 
     return (
         <>
-            <div style={circleStyle}></div>
-            <div style={littleCircle}></div>
+            <div style={circleStyle} className={`fixed bg-white/30 shadow-[0_0_10px_rgba(0,0,0,0.25)] rounded-full pointer-events-none z-[9999] flex items-center justify-center transition-[transform,width,height] duration-200 ease-out backdrop-blur-sm`}></div>
+            <div style={littleCircleStyle} className={`fixed bg-white/80 shadow-[0_0_10px_rgba(0,0,0,0.5)] rounded-full pointer-events-none z-[10000] flex items-center justify-center transition-[width,height] duration-200 ease-out backdrop-blur-sm`}></div>
             <style jsx global>{`
                 * {
                     cursor: none !important;

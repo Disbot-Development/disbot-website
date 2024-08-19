@@ -8,9 +8,8 @@ export default function UnkownPage() {
     ];
 
     return (
-        <ErrorPage
-            code = { 404 }
-            message = { messages[Math.floor(Math.random() * messages.length)] || 'Page introuvable.' }
-        />
+        <>
+            <ErrorPage code={404} message={messages[Math.floor(Math.random() * messages.length)] || 'Page introuvable.'}/>
+        </>
     );
 };

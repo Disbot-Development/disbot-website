@@ -38,17 +38,17 @@ export default function App({ Component, pageProps }) {
             <Head>
                 <title>Disbot</title>
             </Head>
-            <main className='transition-all duration-200 z-10 absolute inset-0 px-5 h-screen max-w-7xl w-full mx-auto'>
-                <Header NavItems={NavItems} />
-                <div className='block px-5 md:px-0'>
-                    <Component {...pageProps} />
+            <main className='absolute inset-0 px-5 max-w-7xl mx-auto'>
+                <Header NavItems={NavItems}/>
+                <div className='px-5 lg:px-0'>
+                    <Component {...pageProps}/>
                 </div>
-                <Footer />
+                <Footer/>
             </main>
             <BrowserView>
-                <CursorEffects />
+                <CursorEffects/>
             </BrowserView>
-            <ScrollButton />
+            <ScrollButton/>
         </ThemeProvider>
     );
 }
