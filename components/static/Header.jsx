@@ -34,7 +34,7 @@ export default function Header({ $, NavItems }) {
                     <div className='flex items-center space-x-6'>
                         <div className='flex items-center space-x-3'>
                             <a href='/'>
-                                <img src='/img/logo2.png' className={'rounded-full hover:scale-110 transition-all duration-300 ease-in-out'} width='48' height='48'/>
+                                <img src='/img/logo2.png' className='rounded-full hover:scale-110 transition-all duration-300 ease-in-out' width='48' height='48'/>
                             </a>
                         </div>
                         <ul ref={navRef} className='hidden lg:flex items-center space-x-4 relative'>
@@ -57,7 +57,7 @@ export default function Header({ $, NavItems }) {
                         </ul>
                     </div>
                     <div className='flex items-center space-x-6 relative'>
-                        <Link href={'https://discord.gg/YPW3ZNuKW5'}>
+                        <Link href='https://discord.gg/YPW3ZNuKW5'>
                             <a className='group overflow-hidden relative w-28 h-11 bg-gray-600/50 text-white rounded-xl font-medium cursor-pointer z-10 flex items-center justify-center'>
                                 Support
                                 <span className='absolute w-36 h-32 -top-8 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-all group-hover:duration-500 duration-1000 origin-left'></span>

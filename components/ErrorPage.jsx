@@ -19,7 +19,7 @@ export default function ErrorPage({ code, message }) {
                 <h1 className='text-4xl font-extrabold text-white'>{code}</h1>
                 <p className='text-xl font-thin text-white text-opacity-75'>{message}</p>
                 <button type='button' className='bg-blurple-400 text-center w-72 rounded-2xl h-14 relative font-medium text-white group mt-2' onClick={() => { setClicked(true); router.back();}}>
-                    <div className={`bg-blurple-400 rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-[275px] z-10 duration-500 ${clicked ? 'w-[160px]' : ''}`}>
+                    <div className={`bg-blurple-400 rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-[275px] z-10 transition-all duration-300 ease-in-out ${clicked ? 'w-[160px]' : ''}`}>
                         {clicked ? (
                             <i className='fad fa-spinner-third fa-spin text-white'/>
                         ) : (

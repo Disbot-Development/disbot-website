@@ -51,7 +51,7 @@ export default function Landing() {
                             Le meilleur bot de protection pour votre serveur
                         </p>
                         <div className='mt-5 flex flex-wrap items-center gap-x-4 justify-center lg:justify-start'>
-                            <Link href={'https://discord.com/oauth2/authorize?client_id=1233606057507422268'}>
+                            <Link href='https://discord.com/oauth2/authorize?client_id=1233606057507422268'>
                                 <a className='group overflow-hidden relative w-32 h-12 bg-blurple-600/50 text-white rounded-xl font-medium cursor-pointer z-10 flex items-center justify-center'>
                                     Inviter
                                         <span className='absolute w-36 h-32 -top-8 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-all group-hover:duration-500 duration-1000 origin-left'></span>
@@ -63,7 +63,7 @@ export default function Landing() {
                                 </a>
                             </Link>
                             <div className='py-10'></div>
-                            <Link href={'#features'}>
+                            <Link href='#features'>
                                 <a className='group overflow-hidden relative w-44 h-12 bg-gray-600/50 text-white rounded-xl font-medium cursor-pointer z-10 flex items-center justify-center'>
                                     Fonctionnalités
                                         <span className='absolute w-36 h-36 -top-16 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-150 transition-all group-hover:duration-500 duration-1000 origin-left'></span>
@@ -206,7 +206,7 @@ export default function Landing() {
                                 ...
                             </p>
                         )}
-                        <Link href={'https://discord.com/oauth2/authorize?client_id=1233606057507422268'}>
+                        <Link href='https://discord.com/oauth2/authorize?client_id=1233606057507422268'>
                             <a className='mt-5 group overflow-hidden relative bg-blurple-600/50 text-white rounded-xl font-medium cursor-pointer z-10 flex items-center justify-center w-28 h-8 sm:w-32 sm:h-12'>
                                 Inviter
                                     <span className='absolute w-36 h-32 -top-8 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-all group-hover:duration-500 duration-1000 origin-left'></span>

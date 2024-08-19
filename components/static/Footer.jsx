@@ -59,7 +59,7 @@ export default function Footer() {
                             <div className='mb-1'>
                             <Link href='https://discord.gg/YPW3ZNuKW5' rel='noopener noreferrer'>
                                 <a className='relative text-white/50 hover:text-white transform duration-300 group'>
-                                    <i className={`fa-brands fa-discord`}/> Discord
+                                    <i className='fa-brands fa-discord'/> Discord
                                     <span className='absolute -inset-x-1 bottom-0 h-[3px] bg-blurple-600 transition-all duration-300 ease-in-out group-hover:h-full -z-10'></span>
                                 </a>
                             </Link>
@@ -67,7 +67,7 @@ export default function Footer() {
                             <div className='mb-1'>
                                 <Link href='https://github.com/disbot-development' rel='noopener noreferrer'>
                                     <a className='relative text-white/50 hover:text-white transform duration-300 group'>
-                                        <i className={`fa-brands fa-github`}/> GitHub 
+                                        <i className='fa-brands fa-github'/> GitHub 
                                         <span className='absolute -inset-x-1 bottom-0 h-[3px] bg-blurple-600 transition-all duration-300 ease-in-out group-hover:h-full -z-10'></span>
                                     </a>
                                 </Link>

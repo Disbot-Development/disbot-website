@@ -22,7 +22,7 @@ export default function ScrollReveal({ children, className }) {
 
     return (
         <>
-            <div ref={ref} className={`${className} transition-all duration-500 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div ref={ref} className={`transition-all duration-500 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 {children}
             </div>
         </>
