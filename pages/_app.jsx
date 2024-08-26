@@ -1,23 +1,29 @@
-import '../public/css/global.css';
-import '../public/css/tippy.css';
 import '../public/css/customColors.css';
+import '../public/css/global.css';
 import 'tailwindcss/tailwind.css';
 
-import { ThemeProvider } from 'next-themes';
 import { BrowserView } from 'react-device-detect';
+import { ThemeProvider } from 'next-themes';
 
+import dynamic from 'next/dynamic';
 import NProgress from 'nprogress';
 import Router from 'next/router';
 import Head from 'next/head';
 
-import Header from '../components/static/Header.jsx';
-import Footer from '../components/static/Footer.jsx';
-import CursorEffects from '../components/static/CursorEffects.jsx';
-import ScrollButton from '../components/static/ScrollButton.jsx';
+import Header from '../components/static/Header';
+import Footer from '../components/static/Footer';
 
 Router.onRouteChangeStart = () => NProgress.start();
 Router.onRouteChangeComplete = () => NProgress.done();
 Router.onRouteChangeError = () => NProgress.done();
+
+const ScrollButton = dynamic(() => import('../components/static/ScrollButton'), {
+    ssr: false,
+});
+
+const CursorEffects = dynamic(() => import('../components/static/CursorEffects'), {
+    ssr: false,
+});
 
 export default function App({ Component, pageProps }) {
     const NavItems = [
@@ -30,7 +36,7 @@ export default function App({ Component, pageProps }) {
             link: true,
             name: 'Fonctionnalités',
             href: '#features',
-        }
+        },
     ];
 
     return (
@@ -46,9 +52,9 @@ export default function App({ Component, pageProps }) {
                 <Footer/>
             </main>
             <BrowserView>
-                <CursorEffects/>
+                <CursorEffects />
             </BrowserView>
-            <ScrollButton/>
+            <ScrollButton />
         </ThemeProvider>
     );
-}
+};
