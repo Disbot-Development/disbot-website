@@ -6,14 +6,12 @@ import Link from 'next/link';
 
 export default function Header({ NavItems }) {
     const router = useRouter();
+    const navRef = useRef();
 
     const [activeRect, setActiveRect] = useState(null);
 
-    const navRef = useRef();
-
     useEffect(() => {
         const activeItem = navRef.current.querySelector('.active');
-
         if (activeItem) setActiveRect(activeItem.getBoundingClientRect());
     }, [router.asPath]);
 
@@ -33,10 +31,10 @@ export default function Header({ NavItems }) {
             <header>
                 <div className='max-w-7xl mx-auto py-5 flex items-center justify-between'>
                     <div className='flex items-center space-x-6'>
-                        <div className='flex items-center space-x-3'>
-                            <a href='/' className='rounded-full hover:scale-110 transition-all duration-300 ease-in-out'>
+                        <div className='flex items-center space-x-3 rounded-full hover:scale-110 transition-all duration-300 ease-in-out'>
+                            <Link href='/'>
                                 <Image width={48} height={48} src='/imgs/logo2.png' alt='Disbot Logo'/>
-                            </a>
+                            </Link>
                         </div>
                         <ul ref={navRef} className='hidden lg:flex items-center space-x-4 relative'>
                             <span className={`absolute py-4 px-4 rounded-xl bg-blurple-100 transition-all duration-300 ease-in-out`} style={{
